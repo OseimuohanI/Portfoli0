@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Weather</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">IO</div>
+    <div><h1>Weather App</h1><p class="small">Live weather using Open‑Meteo (no API key)</p></div>
+  </header>
+  <main class="wrap" role="main">
+    <form id="search-form" aria-label="Search city">
+      <input id="city-input" placeholder="Enter city name (e.g. Lagos, London)" style="width:70%;padding:10px;border-radius:8px;border:none" />
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div id="weather-result"></div>
+    <div id="weather-error"></div>
+    <a class="back" href="../index.html">← Back to Portfolio</a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

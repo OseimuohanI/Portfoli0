@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Itua Oseimuohan — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="brand">IO</div>
+    <div>
+      <h1>Itua Oseimuohan</h1>
+      <p class="small">Growing Full-Stack Developer — Crafting clean, modern web experiences</p>
+    </div>
+  </header>
+
+  <main role="main" class="container">
+    <section>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <h2 style="margin:0">Projects</h2>
+      </div>
+
+      <div id="projects" class="projects-grid">
+        <a class="card project-link" href="calculator/index.html">
+          <div class="thumb"><img src="images/calculator.svg" alt="Preview of Calculator application project" style="width:100%;height:100%;object-fit:cover"/></div>
+          <div>
+            <div class="card-title"><h3>Calculator App</h3></div>
+            <p>A sleek calculator built with JavaScript — supports operations and parentheses.</p>
+          </div>
+        </a>
+
+        <a class="card project-link" href="todo/index.html">
+          <div class="thumb"><img src="images/todo.svg" alt="Preview of To-Do List application project" style="width:100%;height:100%;object-fit:cover"/></div>
+          <div>
+            <div class="card-title"><h3>To‑Do List</h3></div>
+            <p>Manage tasks with localStorage, mark complete and remove items.</p>
+          </div>
+        </a>
+
+        <a class="card project-link" href="weather/index.html">
+          <div class="thumb"><img src="images/weather.svg" alt="Preview of Weather application project" style="width:100%;height:100%;object-fit:cover"/></div>
+          <div>
+            <div class="card-title"><h3>Weather App</h3></div>
+            <p>Search any city for live weather data (uses Open‑Meteo API, no API key required).</p>
+          </div>
+        </a>
+
+        <a class="card project-link" href="blog/index.html">
+          <div class="thumb"><img src="images/blog.svg" alt="Preview of Blog project" style="width:100%;height:100%;object-fit:cover"/></div>
+          <div>
+            <div class="card-title"><h3>Blog</h3></div>
+            <p>Minimal blog layout showcasing posts and excerpts with cohesive styling.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <section id="contact" aria-label="Contact Form">
+    <h2>Contact Me</h2>
+    <!-- PhP would have been used here, but I wanted to keep it simple. Please use the form below to reach out. -->
+    <form action="https://formspree.io/f/xeozngay" method="POST" aria-label="Contact form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div>© 2025 Itua Oseimuohan • <a class="small" href="mailto:oseimuohanitua@outlook.com">Mail Me</a> • <a class="small" href="https://github.com/Tectonic-06" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

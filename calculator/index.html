@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">IO</div>
+    <div><h1>Calculator</h1><p class="small">Simple JS calculator</p></div>
+  </header>
+  <main class="calc-wrap" role="main">
+    <input id="calc-display" readonly aria-label="Calculator display"/>
+    <div class="calc-grid" id="calc-grid"></div>
+    <a class="back" href="../index.html">← Back to Portfolio</a>
+  </main>
+  <script>
+  const layout = ['7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+','C'];
+  const grid = document.getElementById('calc-grid');
+  layout.forEach(v=>{
+    const btn = document.createElement('button');
+    btn.className='calc-btn';
+    btn.textContent = v;
+    btn.setAttribute('data-val', v);
+    grid.appendChild(btn);
+  });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
