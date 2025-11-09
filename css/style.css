@@ -19,6 +19,9 @@ body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color:#e6f0f2;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
